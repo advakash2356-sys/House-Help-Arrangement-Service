@@ -1,0 +1,6 @@
+{
+  "name": "House-Help Arrangement Service",
+  "description": "Independent arrangement and comparison service for on-demand house-help platforms with multi-agent orchestration and dual-mode operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
