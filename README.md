@@ -20,7 +20,7 @@ Independent arrangement and comparison service for on-demand house-help platform
 
 - **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Lucide React, Motion, Recharts
 - **Backend / Server**: Node.js, Express, tsx, esbuild
-- **AI / Agentic Workflow**: `@google/genai`, custom LangGraph state machine workflow
+- **Agentic Workflow**: custom state-machine workflow in `server/agents/langgraph_workflow.ts` (hand-written TypeScript; the LangGraph library is not used, and `@google/genai` is a declared dependency not currently imported)
 - **Environment & Utilities**: dotenv
 
 ## Setup
