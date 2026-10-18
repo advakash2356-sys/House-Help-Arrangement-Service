@@ -114,7 +114,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
   // Admin Email configuration state
   const [isEditingEmail, setIsEditingEmail] = useState(false);
-  const [emailInput, setEmailInput] = useState(settings.admin_email || 'adv.akash2356@gmail.com');
+  const [emailInput, setEmailInput] = useState(settings.admin_email || 'admin@example.com');
   const [isSavingEmail, setIsSavingEmail] = useState(false);
   const [emailSaveSuccess, setEmailSaveSuccess] = useState(false);
 
@@ -956,7 +956,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={emailInput}
                       onChange={(e) => setEmailInput(e.target.value)}
                       className="px-2.5 py-1 bg-slate-950 text-white border border-slate-700 rounded-lg text-xs font-mono focus:outline-none focus:border-amber-400"
-                      placeholder="adv.akash2356@gmail.com"
+                      placeholder="admin@example.com"
                     />
                     <button
                       onClick={handleSaveEmail}
@@ -968,7 +968,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <button
                       onClick={() => {
                         setIsEditingEmail(false);
-                        setEmailInput(settings.admin_email || 'adv.akash2356@gmail.com');
+                        setEmailInput(settings.admin_email || 'admin@example.com');
                       }}
                       className="px-2 py-1 text-slate-400 hover:text-white text-xs cursor-pointer"
                     >
@@ -978,7 +978,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 ) : (
                   <div className="flex items-center space-x-2 mt-0.5">
                     <span className="font-mono font-bold text-white text-sm">
-                      {settings.admin_email || 'adv.akash2356@gmail.com'}
+                      {settings.admin_email || 'admin@example.com'}
                     </span>
                     <button
                       onClick={() => setIsEditingEmail(true)}

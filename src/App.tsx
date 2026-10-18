@@ -57,7 +57,7 @@ export default function App() {
     upi_payee_name: '',
     convenience_fee: 49,
     is_admin_override: false,
-    admin_email: 'adv.akash2356@gmail.com',
+    admin_email: 'admin@example.com',
   });
 
   const [bookings, setBookings] = useState<BookingRecord[]>([]);

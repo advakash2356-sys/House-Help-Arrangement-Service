@@ -11,7 +11,7 @@ class DatabaseStore {
     upi_payee_name: '',
     convenience_fee: 49,
     is_admin_override: false,
-    admin_email: 'adv.akash2356@gmail.com',
+    admin_email: process.env.ADMIN_EMAIL || 'admin@example.com',
     whatsapp_number: '+919876543210',
     whatsapp_alerts_enabled: true,
     quiet_hours_enabled: false,

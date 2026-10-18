@@ -161,7 +161,7 @@ export class LangGraphWorkflowEngine {
     db.addLog({
       agent_name: 'Communication Agent',
       action: 'Admin Notification Dispatched',
-      details: `Dispatched instant HITL approval request to Admin Email (${db.settings.admin_email || 'adv.akash2356@gmail.com'}) for booking ${bookingId}.`,
+      details: `Dispatched instant HITL approval request to Admin Email (${db.settings.admin_email || 'admin@example.com'}) for booking ${bookingId}.`,
       level: 'info',
       booking_id: bookingId,
     });
